@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="guess.css" type="text/css">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Number guessing game</h1>
+            <p class="subtitle">Try and guess a random number between 1 and 100.</p>
+            <p class="flavour-text">You have 10 attempts to guess the number.</p>
+        </div>
+        <form class="form">
+            <div class="window">
+                <label for = "guessField" id = "guess">Guess the number</label>
+                <button>X</button>
+                <button>?</button>
+            </div>
+            <br/>
+            <input type="text" id = "guess-field" class="guess-field"/><br/>
+            <input type = "submit" id = "submit" value="submit guess">
+        </form>  
+        <div>
+            <p>Guesses remaining: <span id="guesses-remaining"></span></p>
+            <p>Previous guesses: <span id="guesses"></span></p>
+            <span id="errorMsg"></span>
+            <p id="high-or-low"></p>
+
+            <div id="endgame" hidden>
+                <div class="window">
+                    <label id = "guess">Game Over</label>
+                    <button>X</button>
+                    <button>?</button>
+                </div>
+                <span id="show-number"></span><br/>
+                <input type = "button" id = "reset" value="Play again.">
+            </div>
+        </div>
+
+        <script src="guess.js"></script>
+    </body>
+</html>
