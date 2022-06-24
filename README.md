@@ -1,5 +1,6 @@
 # Guess-the-number
-Guess the number, a js game.
+Guess the number, a js game.<br />
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Paradonized/Guess-the-number?style=plastic">
 
 ## Gameplay
 You have 10 attempts to guess a random number (from 1 to 100). When you submit your guess, it will be saved in a list and compared to the random number. If the guess is higher or lower, it will be written below the list. When the game ends (either win or loss) the game resets (it does not refresh the page).
